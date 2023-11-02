@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import { Routes, Route,useNavigate } from "react-router-dom";
-import AuthoreList from './AuthoreList'
 import AddBook from "./AddBook";
 import Authore from './Authore';
 import UpdateBook from './UpdateBook';
@@ -34,7 +33,6 @@ function Layout(props) {
       <Route path="/updatebook/:id" element={<UpdateBook />}></Route>
        <Route path="/add-book" element={<AddBook/>}></Route>
        <Route path="/authore" element={<Authore />}></Route>
-       <Route path="/authoreList" element={<AuthoreList/>}></Route>
        <Route path="/updateauthor/:id" element={<UpdateAuthor/>}></Route>
        <Route path="/authoreLists" element={<AuthoreLists/>}></Route>
        
